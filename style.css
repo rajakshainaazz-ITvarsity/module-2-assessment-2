@@ -1,0 +1,338 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Impact;
+    background-image: url("images/back-pink.webp");
+    background-size: 25%;
+    background-repeat: repeat;
+}
+
+/* HEADER STYLE --------------------------------------------*/ 
+#header{
+    background-color: rgb(59, 51, 53);
+    background: linear-gradient(pink, rgb(245, 139, 156));
+    color: white;
+    z-index: 500;
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    font-family: 'Segoe UI';
+    text-align: center;
+    overflow: auto;
+}
+
+#header a{
+    text-decoration: none;
+    float: left;
+    color: white;
+    font-weight: bolder;
+}
+
+#header #left{
+    float: left;
+    width: 40%;
+}
+
+#header #right{
+    float: right;
+    font-weight: 600;
+}
+
+#header #left a{
+    margin: 5px 10px;
+}
+
+#header #right a{
+    margin: 10px 10px;
+}
+
+#header #left img{
+    height: 50px;
+    float: left;
+}
+
+#header #right img{
+    height: 20px;
+    float: right;
+    padding-left: 20px;
+}
+
+
+#header h1{
+    margin: 0 10px;
+    float: left;
+}
+
+#header input{
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    border:2px solid black;
+    margin: 10px 10px 10px 0px;
+    background-color: white;
+}
+/* button replaced by image
+#header button{
+    width: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+*/
+/* END HEADER STYLE --------------------------------------------*/
+
+/* TABS BELOW HEADER*/ 
+#tabs{
+    background-color: rgb(245, 139, 156);
+    z-index: 500;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+}
+
+#tabs a{
+    text-decoration: none;
+    display: block;
+    width: 33.3%;
+    float: left;
+    background-color: rgb(245, 139, 156);
+    font-size: large;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+#tabs a:hover{
+    background-color: pink;
+    color: white;
+}
+/* END TABS BELOW HEADER */
+
+#container{
+    margin-top: 88px;
+    width: 100%;
+}
+
+/* INDEX */
+#main{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#main img{
+    padding: 1px;
+}
+
+#banner{
+    display: block;
+    width:100%;
+    height: 170px;
+    border: 2px solid white;
+    background-color: red;
+    margin-top: 2px;
+}
+
+#banner h2{
+    border: 5px solid white;
+    margin: 20px;
+    padding:20px;
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 60px;
+}
+
+a.special img:hover{
+    transform: scale(0.98);
+}
+/* END INDEX */
+
+#footer{
+    display: block;
+    background: linear-gradient(rgb(245, 139, 156), pink);
+    padding: 10px;
+    text-align: center;
+}
+
+#footer img{
+    width: 60px;
+    padding: 0 5px;
+}
+
+#footer img:hover{
+    transform: translateY(3px);
+}
+
+#footer p{
+    font-family: 'Segoe UI';
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+#content{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+/* ITEM BOX -------------------*/
+#content .item-box{
+    width: 100%;
+    height: 100px;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: auto;
+    border: 3px solid black;
+    border-radius: 50px;
+    color: black;
+    background-color: rgba(245, 109, 215, 0.376);
+}
+
+#content .item-box .logo img{
+    height: 65px;
+    padding: 14px 20px 5px 30px;
+}
+
+#content h1, #content h2{
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+#content p{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#content #right-col ul{
+    font-family: cursive;
+    list-style-position: inside;
+    list-style-type: circle;
+    text-transform: capitalize;
+}
+
+#content .item-box h2, #content .item-box p{
+    font-family: 'Segoe UI';
+    float: left;
+    padding: 5px 0px 0 10px;
+    margin: 0;
+    width: 60%;
+}
+
+#content .item-box .right{
+    margin-top: -15px;
+    float: right;
+}
+
+#content .item-box img.right{
+    height: 50px;
+    padding: 4px 20px;
+}
+
+#content a.item-box img:hover{
+    transform: scale(1.2);
+}
+
+#content a.item-box img.right:hover{
+    transform: none;
+}
+
+.item-box .logo{
+    float: left;
+    height: 80px;
+    width: 20%;
+    text-align: center;
+}
+
+/* END ITEM BOX */
+
+#item-box-full{
+    width: 58%;
+}
+
+#item-box-full a{
+    text-decoration: none;
+    color: black;
+}
+
+#item-box-full h1, 
+#item-box-full h2,
+#right-col h2{
+    font-weight: 200;
+    background-color: rgb(245, 139, 156);
+    color: white;
+}
+
+#item-box-full p,
+#right-col p{
+    font-family: cursive;
+    font-weight: 200;
+}
+
+#item-box-full img{
+    width: 100%;
+}
+
+#right-col{
+    width: 40%;
+    float: right;
+    text-align: center;
+}
+
+#right-col img{
+    width: 100%;
+    display: block;
+    padding-bottom: 5px;
+}
+
+#content .full{
+    width: 100%
+}
+
+#container #content #item-box-full #contact-form{
+    text-align: center;
+    margin: auto;
+}
+
+#container #content #item-box-full #contact-form input{
+    width: 60%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#container #content #item-box-full #contact-form textarea{
+    width: 80%;
+    height: 60px;
+}
+
+#container #content #item-box-full #contact-form input,
+#container #content #item-box-full #contact-form textarea{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#container #content #item-box-full #contact-form #btn-send{
+    background-color: rgb(245, 139, 156);
+    border-radius: 20px;
+    color: white;
+    font-size: larger;
+}
+
+/*
+zoom: 110% for making images larger on hover
+
+*/
